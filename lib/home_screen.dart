@@ -1,4 +1,4 @@
-import 'package:dio_clean_architecture/services.dart';
+import 'package:dio_clean_architecture/dio_service.dart';
 import 'package:flutter/material.dart';
 
 class DioHomeScreen extends StatelessWidget {
