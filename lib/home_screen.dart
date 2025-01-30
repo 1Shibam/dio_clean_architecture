@@ -7,14 +7,18 @@ class DioHomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final TextEditingController num = TextEditingController();
-    
+
     return Scaffold(
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            TextField(controller: num,),
+            TextField(
+              controller: num,
+            ),
             ElevatedButton(
-                onPressed: () => printSomething(int.parse(num.text)), child: const Text('print')),
+                onPressed: () => printSomething(int.parse(num.text)),
+                child: const Text('print')),
           ],
         ),
       ),
